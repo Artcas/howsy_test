@@ -34,7 +34,7 @@ class PropertyService implements PropertyServiceInterface
                 'msg' => 'No properties found.'
             ];
         }
-        return $response;
+        return response()->json($response, 201);
     }
 
 
@@ -139,7 +139,7 @@ class PropertyService implements PropertyServiceInterface
             ];
         }
 
-        return $response;
+        return response()->json($response, 201);
     }
 
 

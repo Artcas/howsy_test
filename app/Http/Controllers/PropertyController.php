@@ -24,7 +24,7 @@ class PropertyController extends Controller
     {
        $response =  $this->propertyService->list();
 
-       return response()->json($response, 201);
+       return  $response;
     }
 
 
@@ -62,7 +62,7 @@ class PropertyController extends Controller
     {
         $response =  $this->propertyService->show($id);
 
-        return response()->json($response, 201);
+        return $response;
     }
 
 
