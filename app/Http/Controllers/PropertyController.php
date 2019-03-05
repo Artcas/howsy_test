@@ -22,9 +22,8 @@ class PropertyController extends Controller
      */
     public function index()
     {
-       $response =  $this->propertyService->list();
+        return $this->propertyService->list();
 
-       return  $response;
     }
 
 
@@ -46,10 +45,8 @@ class PropertyController extends Controller
             'address.post_code' => 'required',
         ]);
 
-        $response = $this->propertyService->store($request);
+        return $this->propertyService->store($request);
 
-
-        return $response;
     }
 
     /**
@@ -60,9 +57,8 @@ class PropertyController extends Controller
      */
     public function show($id)
     {
-        $response =  $this->propertyService->show($id);
+        return  $this->propertyService->show($id);
 
-        return $response;
     }
 
 
